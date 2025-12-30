@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://media.tenor.com/LLvKaLs0YicAAAAe/black-man-crying-cry.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Chăm sóc sinh viên Việt Nam</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
         <hr>
         <h2>DANH SÁCH CÁC KHÓA HỌC NỔI BẬT DÀNH CHO SINH VIÊN</h2>
         <h5>Chào mừng các bạn sinh viên đến với chương trình đào tạo của chúng tôi. Các khóa học của chúng tôi được thiết kế để giúp bạn phát triển toàn diện các kỹ năng cần thiết cho công việc và cuộc sống. Dưới đây là những khóa học nổi bật mà chúng tôi cung cấp:</h5>
-<table border="1" cellspading="7" cellspacing="0">
+<table border="1" cellpadding="7" cellspacing="0">
 <thead>
     <tr>
         <th>Tên Khóa Học</th>
@@ -34,10 +34,10 @@
     <td>3.500.000</td>
     <td rowspan="2">Mô tả: Khóa học này cung cấp cho bạn các kỹ năng cơ bản và nâng cao về lập trình web, từ việc xây dựng trang web tĩnh đến các ứng dụng động sử dụng JavaScript, HTML và CSS. Bạn sẽ được học cách phát triển <mark>website</mark> từ đầu, bao gồm các kiến thức về CSS, HTML, và JavaScript.
 <ul>
-    <li><b></b><b>HTML </b>cơ bản</li><b></b>
-    <li><b></b><b>CSS </b>để tạo giao diện đẹp mắt</li><b></b>
-    <li><b></b><b>JavaScript </b>cho trang web động</li><b></b>
-    <li><b></b><b>Responsive Design </b>để tối ưu trên mọi thiết bị</li><b></b>
+    <li><b>HTML</b> cơ bản</li>
+    <li><b>CSS </b>để tạo giao diện đẹp mắt</li>
+    <li><b>JavaScript </b>cho trang web động</li>
+    <li><b>Responsive Design </b>để tối ưu trên mọi thiết bị</li>
 </ul>
 <b>Phương pháp học:</b> Lý thuyết kết hợp thực hành, dựa trên các dự án thực tế có sự hướng dẫn trực tiếp từ giảng viên.</td>
     <td rowspan="2">Cần có kiến thức cơ bản về máy tính, khả năng tự học và tinh thần ham học hỏi.</td>
@@ -58,9 +58,9 @@
     <td>2.000.000</td>
     <td rowspan="2"><b>Mô tả:</b> Khóa học tập trung vào việc phát triển kỹ năng giao tiếp và thuyết trình, giúp sinh viên tự tin hơn trong môi trường học tập và làm việc. Bạn sẽ học cách làm thế nào để truyền đạt ý tưởng một cách rõ ràng và thuyết phục.
     <ul>
-        <li><b></b><u><b>Giao tiếp hiệu quả</b></u></li><b></b>
-        <li><b></b><b>Thuyết trình trước đám đông</b></li><b></b>
-        <li><b></b><b>Đàm phán và thuyết phục</b></li><b></b>
+        <li><u><b>Giao tiếp hiệu quả</b></u></li>
+        <li><b>Thuyết trình trước đám đông</b></li>
+        <li><b>Đàm phán và thuyết phục</b></li>
     </ul>
     <b>Phương pháp học:</b> Học qua các tình huống giao tiếp thực tế, đóng vai trò và thảo luận nhóm, kết hợp lý thuyết và thực hành.</td>
     <td rowspan="2">Cần sự cởi mở và sẵn sàng tham gia vào các tình huống giao tiếp nhóm.</td>
@@ -117,46 +117,47 @@
 <p><i><u><b>Khóa học lập trình python:</b></u></i> Là khóa học giúp bạn xây dựng các ứng dụng phần mềm với ngôn ngữ Python.</p>
 <br>
 
-
-<form action=""><h2>ĐĂNG KÝ KHÓA HỌC NGAY HÔM NAY</h2></form>
+<h2>ĐĂNG KÝ KHÓA HỌC NGAY HÔM NAY</h2>
+<form action="#" method="post">
 <table width="60%">
 <tr>
     <td><label for="name"><b>Họ và Tên:</b></label></td>
-    <td><input type="text" name="name" id="name" placeholder="Nguyễn Văn A"></td>
+    <td><input type="text" name="name" id="name" placeholder="Nguyễn Văn A" required></td>
 </tr>
 
 
 <tr>
     <td><label for="email" ><b>Email:</b></label></td>
-    <td> <input type="email" name="email" id="email" placeholder="NguyenVanA@gmail.com"></td>
+    <td> <input type="email" name="email" id="email" placeholder="NguyenVanA@gmail.com" required></td>
    
 </tr>
    
 
 <tr> 
    <td><label for="phone"><b>Số điện thoại:</b></label></td> 
-   <td><input type="number" name="phone" id="phone"></td> 
+   <td><input type="tel" name="phone" id="phone" placeholder="0xxxxxxxxx" pattern="0[0-9]{9}" title="Nhập SĐT 10 số, bắt đầu bằng 0" required></td> 
 </tr>
     
 
 <tr> 
    <td><label for="course"><b>Chọn khóa học:</b></label></td> 
    <td>
-        <select name="course" id="course">
+        <select name="course" id="course" required>
+        <option value="" >-- Chọn khóa học --</option>
         <option value="1">Khóa Học Lập Trình Web - 3.500.000</option>
-        <option value="2">Khóa Học Lập Trình python - 3.500.000</option>
+        <option value="2">Khóa Học Lập Trình python - 4.000.000</option>
         </select>
     </td> 
 </tr>
     
 <tr>
     <td><label for="quality"><b>Số người:</b></label></td>
-    <td><input type="number" name="quality" id="quality"> </td>   
+    <td><input type="number" name="quality" id="quality" min="1" required> </td>   
 </tr>
  
 <tr>
    <td><label for="dob"><b>Ngày bắt đầu:</b></label> </td>
-    <td><input type="date" name="dob" id="dob"></td> 
+    <td><input type="date" name="dob" id="dob" required></td> 
 </tr>
 
 <tr> 
@@ -166,16 +167,17 @@
     
 
 <tr>
-   <td><input type="submit" name="" id="" value="GỬI DĂNG KÝ KHÓA HỌC"> <button>Nhập lại</button></td> 
+   <td><input type="submit" name="" id="" value="GỬI ĐĂNG KÝ KHÓA HỌC"> <button type="reset">Nhập lại</button></td> 
 </tr>
 
 </table>
+</form>
 <br> <br>
 <hr>
-<foot>
+<footer>
 
 <p><b>Liên hệ: </b>Email: info@sinhvienviet.vn |Hotline: 1900 5678 Địa chỉ: 456 Đường XYZ, Quận 3, TP.HCM</p>
-</foot>
+</footer>
 
 
 
